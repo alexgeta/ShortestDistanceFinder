@@ -34,6 +34,7 @@ public class City {
 
     public void addDirection(City city, int distance){
         directions.put(city, distance);
+        /*add backward connection*/
         city.getDirections().put(this, distance);
     }
 
