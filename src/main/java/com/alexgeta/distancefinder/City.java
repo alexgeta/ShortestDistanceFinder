@@ -42,11 +42,8 @@ public class City {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         City city = (City) o;
-
-        if (!name.equals(city.name)) return false;
-        return true;
+        return name.equals(city.name);
     }
 
     @Override
